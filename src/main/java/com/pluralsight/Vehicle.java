@@ -75,22 +75,3 @@ public void brake(){
 }
 
 
-   /* startEngine()
-    stopEngine()
-    accelerate()
-    brake()
-    C) Moped
-    maxWeight: int
-    ride()
-    C) Car
-    numberOfDoors: int
-    openTrunk()
-    closeTrunk()
-(C) Semi Truck
-    numberOfTrailers: int
-    loadCargo()
-    unloadCargo()
-    C) HoverCraft
-    airCushionPressure: int
-⚫ hover()
-}*/
