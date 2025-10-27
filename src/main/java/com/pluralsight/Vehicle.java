@@ -1,7 +1,5 @@
 package com.pluralsight;
 
-import java.sql.SQLOutput;
-
 public class Vehicle {
 
     private String model;
@@ -58,19 +56,22 @@ public class Vehicle {
     public void setCargoCapacity(int cargoCapacity) {
         this.cargoCapacity = cargoCapacity;
     }
-public void startEngine(){
-    System.out.println(" Start the engine is on");
-}
-public void stopEngine(){
-    System.out.println("Stop the engine");
-}
 
-public void accelerate(){
-    System.out.println("Press accelerate");
-}
-public void brake(){
-    System.out.println("Press the brake you can stop car");
-}
+    public void startEngine() {
+        System.out.println(" Start the engine is on");
+    }
+
+    public void stopEngine() {
+        System.out.println("Stop the engine");
+    }
+
+    public void accelerate() {
+        System.out.println("Press accelerate");
+    }
+
+    public void brake() {
+        System.out.println("Press the brake you can stop car");
+    }
 
 }
 
