@@ -3,6 +3,11 @@ package com.pluralsight;
 public class SemiTruck extends Vehicle {
     private int numberOfTrailers;
 
+    public SemiTruck(String model, String color, int topSpeed, int fuelCapacity, int numberOfPassengers,
+                     int cargoCapacity) {
+        super(model, color, topSpeed, fuelCapacity, numberOfPassengers, cargoCapacity);
+    }
+
     public int getNumberOfTrailers() {
         return numberOfTrailers;
     }
@@ -11,11 +16,11 @@ public class SemiTruck extends Vehicle {
         this.numberOfTrailers = numberOfTrailers;
     }
 
-    public void loadCargo(){
-        System.out.println (getCargoCapacity() + "Can load you cargo");
+    public void loadCargo() {
+        System.out.println("Cargo loaded onto the truck.");
     }
-    public void unloadCargo(){
-        System.out.println("Can unload your cargo");
 
+    public void unloadCargo() {
+        System.out.println("Cargo unloaded from the truck.");
     }
 }

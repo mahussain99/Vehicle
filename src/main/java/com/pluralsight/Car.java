@@ -1,19 +1,26 @@
 package com.pluralsight;
 
 public class Car extends Vehicle {
-    private int numberOfDoor;
+    private int numberOfDoors;
 
-    public int getNumberOfDoor() {
-        return numberOfDoor;
+    public Car(String model, String color, int topSpeed, int fuelCapacity, int numberOfPassengers,
+               int cargoCapacity) {
+        super(model, color, topSpeed, fuelCapacity, numberOfPassengers, cargoCapacity);
     }
 
-    public void setNumberOfDoor(int numberOfDoor) {
-        this.numberOfDoor = numberOfDoor;
+    public int getNumberOfDoors() {
+        return numberOfDoors;
     }
-    public void openTruck(){
-        System.out.println ("Can you open your truck please ");
+
+    public void setNumberOfDoors(int numberOfDoors) {
+        this.numberOfDoors = numberOfDoors;
     }
-    public void closeTrunk(){
-        System.out.println("Can you close your truck please");
+
+    public void openTrunk() {
+        System.out.println("Trunk opened.");
+    }
+
+    public void closeTrunk() {
+        System.out.println("Trunk closed.");
     }
 }
